@@ -1,0 +1,6 @@
+rasterio>=1.0a12
+pandas
+jupyter
+scipy
+scikit-learn
+seaborn
