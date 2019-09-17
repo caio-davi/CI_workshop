@@ -1,6 +1,6 @@
-rasterio>=1.0a12
 pandas
 jupyter
+jupyterlab
 scipy
 scikit-learn
 seaborn

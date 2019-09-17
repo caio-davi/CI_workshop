@@ -6,8 +6,8 @@ services:
 
     volumes:
       - type: bind
-        source: ./src
+        source: ./classical_ml/jupyter_notebook
         target: /src
 
     ports:
-      - "5000:5000"
+      - "8888:8888"

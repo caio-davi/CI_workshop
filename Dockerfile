@@ -2,18 +2,14 @@ FROM python:3.6-slim-stretch
 
 ADD requirements.txt requirements.txt
 
-# RUN dpkg-reconfigure locales && \
-#    locale-gen C.UTF-8 && \
-#    /usr/sbin/update-locale LANG=C.UTF-8
+ADD requirements.txt requirements.txt
 
-ENV LC_ALL C.UTF-8
+RUN python -m pip install -r requirements.txt 
 
 WORKDIR /src
 COPY . .
-ENV FLASK_APP /src/app.py
-ENV FLASK_ENV development
-EXPOSE 5000
+EXPOSE 8888
 
 # CMD ["python", "-m", "flask", "run", "--host=0.0.0.0"]
 
-CMD ["bash"]
+ENTRYPOINT  ["jupyter-notebook","--ip=0.0.0.0","--allow-root"]
