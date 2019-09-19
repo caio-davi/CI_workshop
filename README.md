@@ -15,6 +15,10 @@ $ docker-compose up
 ```
 If everything went well, you should be able to run the notebook in http://localhost:8888
 
+## Activities 
+
+- [Scikit Learn Practice](https://www.kaggle.com/caiodavi/ml-workshop-tamu) - The notebook of practice in Kaggle.
+
 ## Good references
 
 - [Weka](https://www.cs.waikato.ac.nz/~ml/index.html) - A Machine Learning Software developed by Waikato University.
